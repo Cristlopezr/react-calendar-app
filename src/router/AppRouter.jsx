@@ -14,7 +14,11 @@ export const AppRouter = () => {
     }, []);
 
     if (status === 'checking') {
-        return <h3>Cargando...</h3>;
+        return (
+            <div style={{ textAlign: 'center', marginTop: '100px' }}>
+                <h3>Cargando...</h3>
+            </div>
+        );
     }
 
     return (
